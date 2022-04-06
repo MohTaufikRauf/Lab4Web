@@ -361,5 +361,98 @@ Kemudian tambahkan CSS.
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
+    padding:0 10px;
+    text-align:center;
+    }
+    .box h3 {
+    margin: 15px 0;
+    }
+    .box p {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    }
+    box img {
+    border: 0;
+    vertical-align: middle;
+    }
+    .image-circle {
+    border-radius: 50%;
+    }
+    .row {
+    margin: 0 -10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    }
+    .row:after, .row:before,
+    .entry:after, .entry:before {
+    content:'';
+    display:table;
+    }
+    .row:after,
+    .entry:after {
+    clear:both;
+    }
+```
+
+Berikut lihat perubahannya.
+
+![menambah_gambar](img/bulat%20bulat.png)
+
+## Menambahkan Content Artikel
+Selanjutnya membuat content artikel. Tambahkan HTML berikut pada main content.
 
 ```
+<hr class="divider" />
+<article class="entry">
+    <h2>First featurette heading.</h2>
+        <img src="https://dummyimage.com/150/7b8a70/fff.png" alt="">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem
+elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc
+pretium ac.</p>
+</article>
+    <hr class="divider" />
+<article class="entry">
+    <h2>First featurette heading.</h2>
+        <img src="https://dummyimage.com/150/7b8a70/fff.png" alt=""
+    class="right-img">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem
+elit, iaculis in nisl volutpat, malesuada tincidunt arcu. Proin in leo fringilla,
+vestibulum mi porta, faucibus felis. Integer pharetra est nunc, nec pretium nunc
+pretium ac.</p>
+</article>
+```
+
+Kemudian tambahkan CSS.
+
+```
+.divider {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin: 40px 0;
+}
+
+.entry {
+    margin: 15px 0;
+}
+.entry h2 {
+    margin-bottom: 20px;
+}
+.entry p {
+    line-height: 25px;
+}
+.entry img {
+    float: left;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.entry .right-img {
+    float: right;
+}
+```
+
+Berikut tampilannya.
+
+![menambah_gambar](img/kotank2.png)
