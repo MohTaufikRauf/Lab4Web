@@ -455,4 +455,6 @@ Kemudian tambahkan CSS.
 
 Berikut tampilannya.
 
-![menambah_gambar](img/kotank2.png)
+![MENAMBAHKAN_GAMBAR](img/kotank2.png)
+
+# TERIMA KASIH
